@@ -150,6 +150,7 @@ export default function PlaylistForm() {
                                     />
                                     <Input
                                         placeholder="Year"
+                                        type="number"
                                         value={song.year}
                                         onChange={(e) => handleSongChange(index, "year", e.target.value)}
                                         required

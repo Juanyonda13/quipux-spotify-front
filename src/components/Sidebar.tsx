@@ -25,7 +25,7 @@ const Sidebar = ({ playlists, className }: { playlists: any[]; className?: strin
                 <ScrollArea className="h-[400px] px-1">
                     <div className="space-y-1 p-2">
                         {playlists.map((playlist) => (
-                              <Link key={playlist.id} to={`playlist/${playlist.name}`}>
+                              <Link key={playlist.id} to={`/dashboard/playlist/${playlist.name}`}>
                                     <Button variant="ghost" className="w-full justify-start font-normal">
                                         <Library className="mr-2 h-4 w-4" />
                                         {playlist.name}
